@@ -78,33 +78,6 @@ Navigation.registerComponent(`app.Overlay`, () => gestureHandlerRootHOC(Overlay)
 
 Navigation.events().registerAppLaunchedListener(async () => {
 
-    // Navigation.setDefaultOptions({
-    //     statusBar: {
-    //         backgroundColor: '#aaa'
-    //     },
-    //     topBar: {
-    //         visible: false,
-    //         drawBehind: true,
-    //     },
-    //     layout: {
-    //         backgroundColor: '#fff',
-    //         orientation: ['portrait']
-    //     },
-    //     bottomTabs: {
-    //         // backgroundColor: '#fff',
-    //         translucent: true,
-    //         hideShadow: true,
-    //         titleDisplayMode: 'alwaysShow', // 'alwaysShow' | 'showWhenActive' | 'alwaysHide'
-    //         drawBehind: Platform.OS === 'ios',
-    //     },
-    //     bottomTab: {
-    //         textColor: '#666',
-    //         iconColor: '#666',
-    //         selectedTextColor: global.PRIMARY_COLOR,
-    //         selectedIconColor: global.PRIMARY_COLOR,
-    //     }
-    // });
-
     Navigation.showOverlay({
         component: {
             name: 'app.Overlay'
